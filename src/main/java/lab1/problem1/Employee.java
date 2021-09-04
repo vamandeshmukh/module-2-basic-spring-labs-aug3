@@ -1,8 +1,25 @@
 package lab1.problem1;
 
+/*
+// for annotation based configuration 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
 @Component
+public class Employee {
+
+	@Value("12345")
+	private int employeeId;
+	@Value("Harriet")
+	private String employeeName;
+	@Value("40000")
+	private double salary;
+	@Value("PES-BU")
+	private String businessUnit;
+	@Value("30")
+	private int age;
+*/
+
 public class Employee {
 
 	private int employeeId;
@@ -66,20 +83,9 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee Details \n----------------------\nEmployee ID : " + employeeId + "\nEmployee Name : " + employeeName
-				+ "\nEmployee Salary : " + salary + "\nEmployee BU : " + businessUnit + "\nEmployee Age : " + age;
+		return "Employee Details \n----------------------\nEmployee ID : " + employeeId + "\nEmployee Name : "
+				+ employeeName + "\nEmployee Salary : " + salary + "\nEmployee BU : " + businessUnit
+				+ "\nEmployee Age : " + age;
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
